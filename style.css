@@ -1,5 +1,4 @@
-
-    body {
+body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -20,13 +19,13 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      background-color: #ffffff;
       border: 2px solid #ccc;
-      border-radius: 10px;
+      box-shadow: 15px 15px 15px rgba(75, 9, 241, 0.1);
       padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
       width: 80%;
-      background: #ffffff;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      margin-left:120px;
     }
 
     .info-box {
@@ -90,4 +89,43 @@
 
     .job-title {
       font-weight: bold;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        width: 95%;
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .photo-box {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      .section, .project {
+        width: 95%;
+        padding: 15px;
+      }
+
+      .main-wrapper {
+        padding: 20px 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .photo-box img {
+        width: 120px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      .section, .project {
+        width: 98%;
+        padding: 10px;
+      }
     }
